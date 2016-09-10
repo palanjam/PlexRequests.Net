@@ -34,10 +34,7 @@
                 @Html.GetNavbarUrl(Context, "/search", UI.Layout_Search, "search")
                 @Html.GetNavbarUrl(Context, "/requests", UI.Layout_Requests, "plus-circle")
                 @Html.GetNavbarUrl(Context, "/issues", UI.Layout_Issues, "exclamation", "<span id=\"issueCount\"></span>")
-                @if (Context.CurrentUser.IsAuthenticated()) // TODO replace with IsAdmin
-                {
-                    <li><a id="donate" href="https://www.paypal.me/PlexRequestsNet" target="_blank"><i class="fa fa-heart" style="color: red"></i> @UI.Layout_Donate</a></li>
-                }
+                <li><a id="donate" href="https://www.paypal.me/JamesPerriton" target="_blank"><i class="fa fa-heart" style="color: red"></i> @UI.Layout_Donate</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
 
